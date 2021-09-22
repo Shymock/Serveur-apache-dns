@@ -12,14 +12,14 @@ wget https://raw.githubusercontent.com/Shymock/Serveur-apache-dns/main/gsb_frais
 cd /var/www/
 wget https://github.com/Shymock/Serveur-apache-dns/raw/main/gsb_frais.tar.gz
 tar -xzvf gsb_frais.tar.gz 
-mysql -u root -p gsb_frais < /home/serrurier/gsb_frais_structure.sql
-mysql -u root -p gsb_frais < /home/serrurier/gsb_frais_insert_tables_statiques.sql
 mysql -u root -p
 CREATE DATABASE gsb_frais;
 CREATE USER 'gsb'@'localhost' IDENTIFIED BY 'gsbpass';
 GRANT ALL PRIVILEGES ON *.* TO 'gsb'@'localhost';
 flush privileges;
 exit
+mysql -u root -p gsb_frais < /home/serrurier/gsb_frais_structure.sql
+mysql -u root -p gsb_frais < /home/serrurier/gsb_frais_insert_tables_statiques.sql
 wget https://raw.githubusercontent.com/Shymock/Serveur-apache-dns/main/gsb_frais_structure.sql
 wget https://raw.githubusercontent.com/Shymock/Serveur-apache-dns/main/gsb_frais_insert_tables_statiques.sql
 cd /etc/apache2/sites-available/
