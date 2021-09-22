@@ -11,7 +11,7 @@ cd /etc/apache2/sites-available/
 wget https://raw.githubusercontent.com/Shymock/Serveur-apache-dns/main/gsb_frais.conf
 cd /var/www/
 wget https://github.com/Shymock/Serveur-apache-dns/raw/main/gsb_frais.tar.gz
-tar -xzvf gsb_frais.tar.gz /var/www/ 
+tar -xzvf gsb_frais.tar.gz 
 mysql -u root -p
 CREATE DATABASE gsb_frais;
 CREATE USER 'gsb'@'localhost' IDENTIFIED BY 'gsbpass';
