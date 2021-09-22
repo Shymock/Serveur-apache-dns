@@ -7,6 +7,6 @@ $TTL	604800
 			   604800)	; Negative Cache TTL
 ;
 @	IN	NS	ns.gsb.lan.
-ns	IN	A	172.24.2.234
+ns	IN	A	172.24.2.237
 www	IN	CNAME	ns
-www.gestionfrais59	IN	A	172.24.2.232
+www.gestionfraisoui	IN	A	172.24.2.236
