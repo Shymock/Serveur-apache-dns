@@ -1,14 +1,13 @@
 apt update -y
-apt-get update -y
-apt-get upgrade -y
+apt upgrade -y
 
-apt-get install apache2 libapache2-mod-php -y
+apt install apache2 libapache2-mod-php -y
 
-apt-get install apache2 -y
+apt install apache2 -y
 
-apt-get install mariadb-server -y
+apt install mariadb-server -y
 
-apt-get install php-mysql -y
+apt install php-mysql -y
 
 mysql_secure_installation
 
