@@ -1,6 +1,6 @@
-apt-get update -y
-apt-get upgrade -y
-apt-get install bind9 -y
+apt update -y
+apt upgrade -y
+apt install bind9 -y
 
 cd /etc
 rm host.conf
